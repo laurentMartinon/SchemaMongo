@@ -1,0 +1,23 @@
+[Tue Jan 29 21:30:23 2013] [info] Listening at "http://*:3000".
+[Tue Jan 29 21:30:37 2013] [debug] Your secret passphrase needs to be changed!!!
+[Tue Jan 29 21:30:37 2013] [debug] GET / (Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:16.0) Gecko/20100101 Firefox/16.0).
+[Tue Jan 29 21:30:37 2013] [debug] Routing to controller "MyMojoliciousApp::Example" and action "welcome".
+[Tue Jan 29 21:30:37 2013] [debug] Rendering template "example/welcome.html.ep".
+[Tue Jan 29 21:30:37 2013] [debug] Rendering template "layouts/default.html.ep".
+[Tue Jan 29 21:30:37 2013] [debug] 200 OK (0.147182s, 6.794/s).
+[Tue Jan 29 21:30:41 2013] [debug] GET / (Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:16.0) Gecko/20100101 Firefox/16.0).
+[Tue Jan 29 21:30:41 2013] [debug] Routing to controller "MyMojoliciousApp::Example" and action "welcome".
+[Tue Jan 29 21:30:41 2013] [debug] Rendering cached template example/welcome.html.ep.
+[Tue Jan 29 21:30:41 2013] [debug] Rendering cached template layouts/default.html.ep.
+[Tue Jan 29 21:30:41 2013] [debug] 200 OK (0.003619s, 276.319/s).
+[Tue Jan 29 21:30:46 2013] [debug] GET / (Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:16.0) Gecko/20100101 Firefox/16.0).
+[Tue Jan 29 21:30:46 2013] [debug] Routing to controller "MyMojoliciousApp::Example" and action "welcome".
+[Tue Jan 29 21:30:46 2013] [debug] Rendering cached template example/welcome.html.ep.
+[Tue Jan 29 21:30:46 2013] [debug] Rendering cached template layouts/default.html.ep.
+[Tue Jan 29 21:30:46 2013] [debug] 200 OK (0.005093s, 196.348/s).
+[Tue Jan 29 21:30:57 2013] [debug] GET / (Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:16.0) Gecko/20100101 Firefox/16.0).
+[Tue Jan 29 21:30:57 2013] [debug] Routing to controller "MyMojoliciousApp::Example" and action "welcome".
+[Tue Jan 29 21:30:57 2013] [debug] Rendering cached template example/welcome.html.ep.
+[Tue Jan 29 21:30:57 2013] [debug] Rendering cached template layouts/default.html.ep.
+[Tue Jan 29 21:30:57 2013] [debug] 200 OK (0.005724s, 174.703/s).
+[Tue Jan 29 21:34:37 2013] [info] Listening at "http://*:3000".

@@ -15,21 +15,19 @@ my $nb = keys(@dbs);
 #       print $_."\n";
 #     }
 
-#  my $client = MongoDB::MongoClient->new;
-#  my $db = $client->get_database( 'test' );
-#  # my $conn = MongoDB::Connection->new; 
-# # my $db = $conn->mydb || die "$!"; 
+# my $client = MongoDB::MongoClient->new;
+# my $db = $client->get_database( 'test' );
+# my $conn = MongoDB::Connection->new; 
+# my $db = $conn->mydb || die "$!"; 
 # my @cols = $db->collection_names;
 
 # use Data::Dumper;
 # print Dumper @cols;
 
-# my $nb = keys(@cols);
-# foreach  (@cols) {
-#       print $_."\n";
-#     }
-
-
+my $nb = keys(@cols);
+foreach  (@cols) {
+      print $_."\n";
+    }
   # /dbs
   get '/dbs' => sub {
     my $self = shift;
@@ -44,7 +42,7 @@ my $nb = keys(@dbs);
     $self->render('dbs');
   };
 
-  # /cols?db=sri
+ # /cols?db=sri
  get '/cols' => sub {
     my $self = shift;
     my $content ="";
@@ -57,7 +55,7 @@ my $nb = keys(@dbs);
     #       $content .= $key." | ".$value."    ";
     # }
 
-     $self->stash(content => $content);
+    $self->stash(content => $content);
     $self->render('cols');
   };
 
@@ -72,8 +70,8 @@ my $nb = keys(@dbs);
     # while (($key, $value) = each(%$data)){
     #       $content .= $key." | ".$value."    ";
     # }
-
-     $self->stash(content => $content);
+    
+    $self->stash(content => $content);
     $self->render('docs');
   };
 
@@ -89,6 +87,11 @@ __DATA__
 <html>
   <head><title><%= title %></title></head>
   <body>
+      # % foreach my $element (@$content) {
+      #   <li>
+      #     <%= link_to $element => "path" %>
+      #   </li>
+      # % }
   	  <%= $content %>
   </body>
 </html>
@@ -107,7 +110,6 @@ __DATA__
 #     </body>
 #   </html>
 
-
 @@ cols.html.ep
 % layout 'default';
 % title 'ShemaMongoDB - collections';
@@ -120,4 +122,3 @@ __DATA__
      <%= $content %>
   </body>
 </html>
-
